@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    namespace 'com.maning.mnpasswordedittext'
+    compileSdk 34
     defaultConfig {
         applicationId "com.maning.mnpasswordedittext"
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdk 14
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -15,6 +15,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
@@ -22,8 +23,12 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.0'
 
-    //测试Gradle
+    //???Gradle
 //    compile 'com.github.maning0303:MNPasswordEditText:V1.0.2'
 
     implementation project(':pswedittextlibrary')
 }
+
+
+
+

@@ -1,7 +1,7 @@
-package com.maning.mnpasswordedittext;
+﻿package com.maning.mnpasswordedittext;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onTextChange(String text, boolean isComplete) {
                 tvShow.setText(text);
                 if (isComplete) {
-                    Toast.makeText(MainActivity.this, "输入完成", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "杈撳叆瀹屾垚", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -32,3 +32,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
